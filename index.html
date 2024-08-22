@@ -8,10 +8,97 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-</head>
-<body>
+    <!-- Font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <h1>This is Masud</h1>
+    <!-- Font Family  cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Script for font -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily:{
+                manrope:['Manrope']
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body class=" mx-auto font-manrope">
+
+   <header class="container mx-auto bg-slate-950 ">
+    <!-- Nav-bar Starts Here -->
+    <nav class="container mx-auto max-w-[1500px] items-center justify-between"> 
+        <div class="navbar bg-base-100 flex justify-between max-auto">
+            <div class="navbar-start">
+              
+              <div class="flex items-center justify-between gap-0">
+                <a href=""><i class="fa-solid fa-arrow-right bg-[#ABEF5F] -rotate-45 px-[8px] py-[7px] rounded-full "></i></a>
+              <a class="btn btn-ghost text-3xl text-[#212121]">Rinterio</a>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex lg:mr-16">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-[#494949] font-bold text-base hover:text-red-500">Home</a></li>
+                <li><a class="text-[#737373] text-base hover:text-red-500 duration-300 ease-in-out">Service</a></li>
+                <li><a class="text-[#737373] text-base hover:text-red-500 duration-300 ease-in-out">Portfolio</a></li>
+                <li><a class="text-[#737373] text-base hover:text-red-500 duration-300 ease-in-out">Blogs</a></li>
+                <li><a class="text-[#737373] text-base hover:text-red-500 duration-300 ease-in-out">Contacts</a></li>
+              </ul>
+            </div>
+
+            <div class=" hidden lg:flex md:items-right md:justify-between md:gap-8">
+                <div>
+                    <a class="bg-slate-50 drop-shadow px-3 py-2 rounded-full" href=""> <i class="fa-solid fa-magnifying-glass text-[#737373]"></i></a>
+                </div>
+    
+    
+                <div><a class="bg-slate-50 drop-shadow px-3 py-2 rounded-full" href=""><i class="fa-solid fa-cart-shopping text-slate-400"></i></a></div>
+    
+            </div>
+            
+
+            <div class=" hidden navbar-end lg:flex items-center justify-center ml-10">
+              <div class=" flex items-center justify-center"><a class="relative  md:pr-20  btn bg-[#ABEF5F] rounded-full ">Book Consult</a>
+              <a class=" absolute ml-32 " href=""><i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full "></i></a></div>
+            </div>
+
+            <div class="dropdown">
+                <div tabindex="0" role="button" class=" mr-10 btn btn-ghost  lg:hidden  bg-slate-100 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  
+                </div>
+
+        </div>
+    </nav>
+    
+         <!-- Nav-bar Ends Here -->
+
+   </header>
     
 </body>
 </html>
