@@ -253,7 +253,7 @@
 
     <!-- Box No 1 -->
     <div class="mx-auto rounded-3xl bg-white shadow-lg p-7 flex flex-col gap-5 lg:flex-row lg:col-span-3 ..."> 
-        <div class=" border border-gray-300 outline-1 outline-dashed rounded-lg" > <img src="./assets/img1.png" alt="">
+        <div class="  rounded-lg" > <img class="lg:h-36 lg:w-40" src="./assets/img1.png" alt="">
         </div>
               <div>
                 <h2 class="text-2xl text-[#494949] font-bold">Commercial</h2>
@@ -310,7 +310,7 @@
 </section>
 
 <!-- My Own section starts here -->
-<section class="mx-auto  bg-bg-image bg-blend-screen bg-no-repeat py-5">
+<section class="container mx-auto  bg-bg-image bg-blend-screen bg-no-repeat py-5">
 <div class="text-center items-center justify-center my-10">
   <button class="max-w-80  text-sm font-bold text-[#494949] text-center py-2 px-3 rounded-full
      bg-green-300 bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black mr-2"></i>Explore our global Portfolio
@@ -320,24 +320,24 @@
 </div>
 
 
-    <div class=" mx-auto text-center flex flex-col items-center justify-center gap-3 p-5 md:flex-row lg:grid grid-cols-3 ">
-          <div class="grid bg-white shadow-2xl rounded-2xl p-6">
-            <h1 class="mx-auto text-8xl text-bold">3</h1>
+    <div class=" mx-auto text-center flex flex-col items-center justify-center gap-3 p-5 md:flex-row lg:grid grid-cols-2 ">
+          <div class="grid bg-white shadow-2xl rounded-2xl p-6 md:size-2/3 lg:w-60 lg:h-60">
+            <h1 class="mx-auto text-8xl text-bold ">3</h1>
             <p class="text-base text-bold">12 Years of Experience</p>
           </div>
 
-        <img class="mx-auto size-3/4 shadow-2xl border border-slate-400 outline-slate-600 px-4 py-7 rounded-2xl md:size-1/5 lg:size-3/4" src="./assets/img5.png" alt="">
+        <img class="mx-auto size-3/4 shadow-2xl border border-slate-400 outline-slate-600 px-4 py-7 rounded-2xl md:size-1/5 lg:w-60 lg:h-60" src="./assets/img5.png" alt="">
 
-          <div class="grid bg-white shadow-2xl rounded-2xl p-6">
+          <div class="grid bg-white shadow-2xl rounded-2xl p-6 md:size-2/3 lg:w-60 lg:h-60">
             <h1 class="mx-auto text-8xl">98</h1>
             <p>Projects done <br> world-wide</p>
           </div>
-        <img class="mx-auto size-4/5 shadow-2xl border border-slate-400 outline-slate-600 px-4 py-6 rounded-2xl md:size-1/5 lg:size-3/4" src="./assets/img6.png" alt="">
-          <div class="grid bg-white shadow-2xl rounded-2xl px-4 py-6">
+        <img class="mx-auto size-4/5 shadow-2xl border border-slate-400 outline-slate-600 px-4 py-6 rounded-2xl md:size-1/5 lg:w-60 lg:h-60" src="./assets/img6.png" alt="">
+          <div class="grid bg-white shadow-2xl rounded-2xl px-4 py-6 md:size-2/3 lg:w-60 lg:h-60">
         <h1 class="mx-auto text-8xl">302</h1>
         <p>Happy Clients <br> World-Wide</p>
       </div>
-      <img class="hidden lg:block mx-auto size-3/4 shadow-2xl border border-slate-400 outline-slate-600 px-4 py-7 rounded-2xl md:size-1/5 lg:size-3/4" src="./assets/img2.png" alt="">
+      <img class="hidden lg:block mx-auto size-3/4 shadow-2xl border border-slate-400 outline-slate-600 px-4 py-7 rounded-2xl md:size-1/5 lg:w-60 lg:h-60" src="./assets/img2.png" alt="">
 
     </div>
 
@@ -349,7 +349,7 @@
 
 
 <!-- Second line grid -->
-<section class="bg-bg-image bg-blend-screen bg-no-repeat  mx-auto my-10">
+<section class="container mx-auto bg-bg-image bg-no-repeat my-10">
 
  <!-- Let’s Discuss Next Project starts here -->
 
@@ -368,54 +368,57 @@
   <div class="container px-5 py-2 mx-auto">
     
     <div class="mx-auto text-center item-center">
-      <div class="flex flex-wrap text-center justify-center items-center gap-x-0">
 
 
-        <div class="p-2 md:w-1/2">
-          <div class="relative">
+      <div class="mx-auto flex flex-col text-center justify-center items-center gap-5 md:grid grid-cols-2">
+
+
+      
+            <input type="text" id="name" name="name" placeholder="First Name*" class=" bg-white shadow-2xl rounded-full border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 ">
+        
+      
+
+
+      
+        
             
-            <input type="text" id="name" name="name" placeholder="First Name*" class="w-3/4  bg-white shadow-2xl rounded-full border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 ">
-          </div>
-        </div>
+            <input type="email" id="email" name="email" placeholder="Last name*" class=" bg-white shadow-2xl rounded-full border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 ">
+         
 
+         
+            
+            <input type="text" id="name" name="name" placeholder="Phone Number*" class=" bg-white shadow-2xl rounded-full border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 ">
+        
+       
+      
+          
+            
+            <input type="email" id="email" name="email" placeholder="Email Address*" class="bg-white shadow-2xl rounded-full border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 ">
+        
+    
+            <textarea id="message" name="message" placeholder="Write message here.." class="  bg-white rounded-sm border-3xl shadow-lg h-32 text-base outline-none text-gray-700 py-1 px-3 md:w-auto md:col-span-2"></textarea>
 
-        <div class="p-2 md:w-1/2">
-          <div class="relative">
-            
-            <input type="email" id="email" name="email" placeholder="Last name*" class="w-3/4  bg-white shadow-2xl rounded-full border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 ">
-          </div>
-        </div>
-        <div class="p-2 md:w-1/2">
-          <div class="relative">
-            
-            <input type="text" id="name" name="name" placeholder="Phone Number*" class="w-3/4 bg-white shadow-2xl rounded-full border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 ">
-          </div>
-        </div>
-        <div class="p-2 md:w-1/2">
-          <div class="relative">
-            
-            <input type="email" id="email" name="email" placeholder="Email Address*" class="w-3/4 bg-white shadow-2xl rounded-full border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 ">
-          </div>
-        </div>
-        <div class="p-2 md:w-full text-center items-center">
-          <div class="relative">
-            <textarea id="message" name="message" placeholder="Write message here.." class="w-5/6 bg-white rounded-sm border-3xl shadow-lg h-32 text-base outline-none text-gray-700 py-1 px-3 "></textarea>
-          </div>
-        </div>
-
-        <div class="w-full  items-center justify-center ">
-          <div class=" flex text-center items-center justify-center">
-          <a class="w-full relative  btn bg-[#ABEF5F] rounded-full">Send Mail 
-            <i class="absolute ml-40 fa-solid fa-arrow-right bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full text-center items-center justify-center "></i></a>
-          </div>
-        </div>
+        
+    </div>
+  </div>
+  
+  <div class="p-2 md:w-full text-center items-center">
+         
+    
+ 
+</div>
+  
+  <div class="w-full  items-center justify-center ">
+    <div class=" flex text-center items-center justify-center">
+    <a class="min-w-44 md:w-96 relative  btn bg-[#ABEF5F] rounded-full">Send Mail 
+      <i class="absolute ml-32 md:ml-32 fa-solid fa-arrow-right bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full text-center items-center justify-center "></i></a>
     </div>
   </div>
 </section>
    </main>
 
 
-   <footer class="mx-auto bg-black pb-10">
+   <footer class="mx-auto bg-black py-10">
 
     <section class="text-center items-center justify-center mx-auto">
       <div class="mx-auto text-center items-center justify-center my-5">
@@ -438,7 +441,7 @@
 
         <div class="   ">
           <div class=" flex text-center items-center justify-center">
-          <a class="relative w-screen md:w-1/5  btn bg-[#ABEF5F] rounded-full">Send Mail 
+          <a class="relative w-48 md:w-2/5  btn bg-[#ABEF5F] rounded-full">Book Consultant 
             <i class="absolute ml-32 md:ml-40 fa-solid fa-arrow-right bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full text-center items-center justify-center "></i></a>
           </div>
         </div>
