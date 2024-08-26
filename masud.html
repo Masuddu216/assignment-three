@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinterio</title>
+    <title>Masud Rinterio</title>
     <!-- DaisyUI & Tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,21 +36,20 @@
       </script>
 
 </head>
-<body class="mx-auto font-manrope">
+<body class="mx-auto font-manrope ">
 
-   <header class="bg-gradient-to-r from-slate-50 to-slate-50 py-10">
-    
+   <header class=" container mx-auto  my-10 ">
     <!-- Nav-bar Starts Here -->
-    <nav class="w-11/12 mx-auto "> 
-        <div class="mx-auto flex justify-between md:justify-between lg:justify-center ">
-           
-            <button class="mx-auto flex items-center justify-center text-center gap-1">
-                <a href=""><i class="fa-solid fa-arrow-right bg-[#ABEF5F] -rotate-45 px-[8px] py-[7px] rounded-full"></i> </a>
-                <a class=" text-3xl font-bold text-[#212121] text-left">Rinterio</a>
-            </button>
-          
-
-            <div class="mx-auto items-center justify-center content-center hidden lg:flex ">
+    <nav class=" container mx-auto items-center justify-between"> 
+        <div class="navbar bg-base-100 flex justify-between max-auto">
+            <div class="navbar-start">
+              
+              <div class="flex items-center justify-between gap-0">
+                <a href=""><i class="fa-solid fa-arrow-right bg-[#ABEF5F] -rotate-45 px-[8px] py-[7px] rounded-full "></i></a>
+              <a class="btn btn-ghost text-3xl text-[#212121]">Rinterio</a>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
               <ul class="menu menu-horizontal px-1">
                 <li><a class="text-[#494949] font-bold text-base hover:text-red-500">Home</a></li>
                 <li><a class="text-[#737373] text-base hover:text-red-500 duration-300 ease-in-out">Service</a></li>
@@ -59,43 +58,51 @@
                 <li><a class="text-[#737373] text-base hover:text-red-500 duration-300 ease-in-out">Contacts</a></li>
               </ul>
             </div>
-            
-            <div class="mx-auto flex items-center justify-center gap-3">
 
-              <div class="mx-auto items-center justify-center gap-3 hidden md:flex">                                          
-                <i class="fa-solid fa-magnifying-glass mx-auto border border-gray-10 bg-white shadow-4xl px-3 py-3 rounded-3xl text-[#737373]"></i>
-                <i class="fa-solid fa-cart-shopping mx-auto border border-gray-10 bg-white shadow-4xl px-3 py-3 rounded-3xl text-[#737373]"></i>                
-                <button class="flex items-center justify-center text-center p-2  bg-[#ABEF5F] rounded-full font-bold gap-2 mx">
-                  <span>Book Consult</span>
-                  <i class="fa-solid fa-arrow-right
-                    bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full "></i>
-                </button>            
-              </div>
+            <div class=" hidden navbar-end lg:flex items-center justify-center gap-7">
 
-              <div class="dropdown mx-auto ">
+              <div class=" hidden lg:flex md:items-right  md:gap-8">
+               
+                <a class="mx-auto bg-slate-100 shadow-2xl px-3 py-2 rounded-full" href=""> <i class="fa-solid fa-magnifying-glass text-[#737373]"></i></a>
+                
+                <a class="mx-auto bg-slate-100 shadow-2xl px-3 py-2 rounded-full" href=""><i class="fa-solid fa-cart-shopping text-slate-400"></i></a>
+                
+            </div>
+
+
+              <div class=" flex items-center justify-center"><a class="relative  md:pr-20  btn bg-[#ABEF5F] rounded-full ">Book Consult</a>
+              <a class=" absolute ml-32 " href=""><i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full "></i></a></div>
+            </div>
+
+            <div class="dropdown right-16">
                 <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden  bg-slate-100 rounded-full">
-                  <i class="fa-solid fa-bars"></i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
                 </div>
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                   
-              </div>
+                </div>
 
-          </div>
-
-            
-
-      </div>        
-
-    
+        </div>
     </nav>
     
          <!-- Nav-bar Ends Here -->
 
-<section class="w-11/12 mx-auto ">
+
          <!-- Banner Section -->
-         <div class="items-center justify-center">
+         <div class="container mx-auto">
             <div class="hero-content flex-col lg:flex-col gap-y-0">
               <img class="bg-none w-2/3 lg:w-2/3 "
                 src="./assets/banner.png"
@@ -104,40 +111,37 @@
                 <p class="py-6 text-center text-xs md:text-base text-[#494949] p-3">
                     The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
                 </p>          
-                <div class="flex items-center justify-center">
-                  <a class="w-screen md:w-60 relative  text-lg  btn  bg-[#cbf49c] rounded-full">View Details</a>
-                  <a class=" absolute ml-32" href=""><i class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black -rotate-45 px-[8px] py-[7px] rounded-full ml-10"></i></a>
+                <div class="flex items-center justify-center"><a class="w-96 relative  text-lg  btn  bg-[#cbf49c] rounded-full">View Details</a>
+                    <a class=" absolute ml-32" href=""><i class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black -rotate-45 px-[8px] py-[7px] rounded-full ml-10"></i></a>
                 </div>
             </div>          
               </div>
             </div>
           </div>
-        </section>
    </header>
 
   
 
-   <main class="">
+   <main class="bg-[#F4F4F4] ">
  <!-- main section starts here -->
 
    <!-- We design thoughtful, liveable spaces -->
-   <section class="bg-[#F4F4F4]">
+   <section class="container mx-auto bg-[#F4F4F4]">
 
-    <div class="w-11/12 mx-auto ">
+    <div class="mx-auto ">
         
-        <div class="hidden md:block ">
-          <img class=" mt-15 p-3  bg-[#F4F4F4] " src="./assets/Vector.png" alt="">
+        <div class="ml-5 hidden md:block "><img class=" mt-15 p-3  bg-[#cac9c9] outline-dashed" src="./assets/Vector.png" alt="">
         </div>
 
         <div class="  text-center  gap-y-10 lg:text-left lg:ml-[52px]">
-            <button class="mt-5 md:mt-0 w-40  text-base text-[#494949] text-center  p-3  rounded-full
-         bg-white bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black mr-3 "></i>About Us</button>
+            <button class="mt-5 md:mt-0 w-40  text-base text-[#494949] text-center  p-3 rounded-full
+         bg-white bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black "></i> About Us</button>
         </div>
   
             <div class="hero">
 
 
-                <div class="flex flex-col-reverse  lg:flex-row-reverse">
+                <div class="hero-content flex flex-col-reverse  lg:flex-row-reverse">
                     <img
                         src="./assets/Rectangle.png"
                         class="size-4/6  rounded-lg shadow-2xl" />
@@ -177,8 +181,7 @@
 
 
 <!-- Our Works Process starts -->
-<section class=" bg-[#F4F4F4]">
-  <div class="w-11/12 mx-auto">
+
 <div class=" mx-auto w-4/5 text-center items-center my-10">
     <button class="w-48  text-base font-bold text-[#494949] text-center  p-3 rounded-full
          bg-white bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black mr-2"></i>How we works</button>
@@ -219,7 +222,7 @@
     <!-- card-4 -->
 
 
-    <div class=" rounded-lg  shadow-xl pt-3 pl-5 text-left bg-[#77AAEA] gap-5">
+    <div class="max-w-screen-sm rounded-lg  shadow-xl pt-3 pl-5 text-left bg-[#77AAEA] gap-5">
         <img class="md:w-2/12  h-10 mt-3 ml-3 my-2" src="./assets/vision.png" alt="">
         <div class="">
           <h2 class="card-title text-xl  text-[#1C1C1C] font-bold">Budget Planning</h2>
@@ -229,16 +232,16 @@
 
   
 </div>
-</div>
-</section>
+
+
 
 <!-- Our Latest Portfolio Section -->
-<section class=" bg-[#F4F4F4]">
+<section class="container mx-auto my-24">
 
-<div class="w-11/12 mx-auto">
+
   <!-- Portfolio text starts here -->
     <div class="text-center items-center justify-center my-10">
-      <button class="w-40 md:w-4/12 text-sm font-bold text-[#494949] text-center  p-1 rounded-full
+      <button class="max-w-72  text-sm font-bold text-[#494949] text-center  p-1 rounded-full
          bg-green-100 bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black mr-2"></i>Explore our Latest works
       </button>
       <h1 class="text-4xl text-[#212121] font-extrabold mt-3">Our Latest Portfolio</h1>
@@ -285,7 +288,7 @@
     <div class="mx-auto rounded-2xl bg-white shadow-lg p-7 flex flex-col gap-5 lg:flex-row lg:col-span-2 ..."> 
         <div class="  rounded-lg" > <img class="mx-auto size-[110%]" src="./assets/img4.png" alt="">
         </div>
-              <div class="">
+              <div class="max-w-screen-sm">
                 <h2 class="text-2xl text-[#494949] font-bold">Commercial</h2>
                 <p class="text-base text-[#737373] px-5">The barn house captivates with its blend of rustic charm and modern.  .</p>
 
@@ -305,12 +308,11 @@
        
 </div>
          
-</div>
+  
 </section>
 
 <!-- My Own section starts here -->
-<section class="bg-slate-200 mt-16 py-5">
-  <div class="w-11/12 mx-auto">
+<section class="mx-auto bg-slate-200 py-5">
 <div class="text-center items-center justify-center my-10">
   <button class="max-w-80  text-sm font-bold text-[#494949] text-center py-2 px-3 rounded-full
      bg-green-300 bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black mr-2"></i>Explore our global Portfolio
@@ -347,7 +349,7 @@
 
     </div>
  
-  </div>
+
 </section>
 
 
@@ -356,12 +358,12 @@
 
 
 <!-- Second line grid -->
-<section class="bg-bg-image bg-cover my-24 py-5">
-<div class="w-11/12 mx-auto ">
+<section class="mx-auto bg-bg-image bg-cover bg-no-repeat my-10">
+
  <!-- Let’s Discuss Next Project starts here -->
 
  <div class="text-center items-center justify-center p-10">
-  <button class="w-4/12  text-sm font-bold text-[#494949] text-center  p-1 rounded-full
+  <button class="max-w-72  text-sm font-bold text-[#494949] text-center  p-1 rounded-full
      bg-green-100 bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black mr-2"></i>Explore our Latest works
   </button>
   <h1 class="text-4xl text-[#212121] font-extrabold mt-3">Let’s Discuss Next Project</h1>
@@ -369,20 +371,39 @@
 </div>
 
 
+
+
 <!-- Portfolio Text ends here -->
-  <div class="w-11/12 px-5 py-2 mx-auto">
+  <div class="container px-5 py-2 mx-auto">
     
     <div class="mx-auto text-center item-center">
 
-       <div class="mx-auto flex flex-col text-center justify-center items-center gap-5 md:grid grid-cols-2">
 
-            <input type="text" id="name" name="name" placeholder="First Name*" class=" bg-white shadow-2xl rounded-full border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 ">
+      <div class="mx-auto flex flex-col text-center justify-center items-center gap-5 md:grid grid-cols-2">
+
+
       
+            <input type="text" id="name" name="name" placeholder="First Name*" class=" bg-white shadow-2xl rounded-full border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 ">
+        
+      
+
+
+      
+        
+            
             <input type="email" id="email" name="email" placeholder="Last name*" class=" bg-white shadow-2xl rounded-full border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 ">
-    
+         
+
+         
+            
             <input type="text" id="name" name="name" placeholder="Phone Number*" class=" bg-white shadow-2xl rounded-full border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 ">
-    
+        
+       
+      
+          
+            
             <input type="email" id="email" name="email" placeholder="Email Address*" class="bg-white shadow-2xl rounded-full border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 ">
+        
     
             <textarea id="message" name="message" placeholder="Write message here.." class="  bg-white rounded-sm border-3xl shadow-lg h-32 text-base outline-none text-gray-700 py-1 px-3 md:w-auto md:col-span-2"></textarea>
 
@@ -396,64 +417,44 @@
  
 </div>
   
-
-</div>
-
-<div class="mx-auto flex text-center items-center justify-center ">
-  <button class="flex items-center justify-center text-center  md:py-3 h-10 min-w-44 md:w-10/12 bg-[#ABEF5F] rounded-full font-bold gap-5">
-    <span>Send Mail</span>
-    <i class="fa-solid fa-arrow-right
-      bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full "></i>
-  </button>
-</div>
+  <div class="w-full  items-center justify-center ">
+    <div class=" flex text-center items-center justify-center">
+    <a class="min-w-44 md:w-96 relative  btn bg-[#ABEF5F] rounded-full">Send Mail 
+      <i class="absolute ml-32 md:ml-32 fa-solid fa-arrow-right bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full text-center items-center justify-center "></i></a>
+    </div>
+  </div>
 </section>
+   </main>
 
-</main>
 
+   <footer class="mx-auto bg-black py-10">
 
-<footer class="bg-black my-10 py-5">
-
-    <section class="w-11/12 mx-auto bg-black text-center items-center justify-center">
+    <section class="text-center items-center justify-center mx-auto">
       <div class="mx-auto text-center items-center justify-center my-5">
-        <div class="mx-auto items-center justify-center text-center">
-          <button class="mx-auto flex items-center justify-center text-center gap-1">
-            <a href=""><i class="fa-solid fa-arrow-right bg-[#ABEF5F] -rotate-45 px-[8px] py-[7px] rounded-full"></i> </a>
-            <a class=" text-3xl font-bold text-white text-center">Rinterio</a>
-          </button>
-        </div>
+        <div class="mx-auto text-center  gap-0 ">
+          <a class="btn btn-ghost text-3xl text-white"> <i class="fa-solid fa-arrow-right bg-[#ABEF5F] -rotate-45 px-[7px] py-[6px] rounded-full "></i>Rinterio</a>
+          </div>
           <div class="mx-auto text-center">
             <p class=" text-[#737373] text-base mt-5 text-center px-5" >The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
           </div>
-        </div>
 
-            <div class="text-center items-center md:justify-center flex flex-col md:flex-row my-10 gap-5">
-              <a class="text-[#737373] text-base mx-5" href="">Home</a>
-              <a class="text-[#737373] text-base mx-5" href="">Service</a>
-              <a class="text-[#737373] text-base mx-5" href="">Portfolio</a>
-              <a class="text-[#737373] text-base mx-5" href="">Blogs</a>
-              <a class="text-[#737373] text-base mx-5" href="">Contact Us</a>       
-            </div>
+      </div>
 
-            <div class="flex text-center items-center md:justify-center ">
-              <button class="flex items-center justify-center text-center w-10/12 mx-6 p-3 md:w-3/12 bg-[#ABEF5F] rounded-full font-bold gap-5">
-                <span>Book Consult</span>
-                <i class="fa-solid fa-arrow-right
-                  bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full "></i>
-              </button>
-            </div>
-
-           
+  <div class="text-center items-center md:justify-center flex flex-col md:flex-row my-10 gap-5">
+    <a class="text-[#737373] text-base mx-5" href="">Home</a>
+    <a class="text-[#737373] text-base mx-5" href="">Service</a>
+    <a class="text-[#737373] text-base mx-5" href="">Portfolio</a>
+    <a class="text-[#737373] text-base mx-5" href="">Blogs</a>
+    <a class="text-[#737373] text-base mx-5" href="">Contact Us</a>       
 </div>
-        
+
+        <div class="   ">
+          <div class=" flex text-center items-center justify-center">
+          <a class="relative w-48 md:w-2/5  btn bg-[#ABEF5F] rounded-full">Book Consultant 
+            <i class="absolute ml-36 md:ml-40 fa-solid fa-arrow-right bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full text-center items-center justify-center "></i></a>
+          </div>
+        </div>
     </section>
-
-   
-
-      
-   
-   
-
-
    </footer>
 </body>
 </html>
