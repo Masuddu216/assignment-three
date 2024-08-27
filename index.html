@@ -38,7 +38,7 @@
 </head>
 <body class="mx-auto font-manrope">
 
-   <header class="bg-gradient-to-r from-slate-50 to-slate-50 py-10">
+   <header class="bg-gradient-to-r from-slate-50 to-slate-50 py-10 ">
     
     <!-- Nav-bar Starts Here -->
     <nav class="w-11/12 mx-auto "> 
@@ -125,16 +125,16 @@
 
    <!-- We design thoughtful, liveable spaces -->
    <section class="bg-[#F4F4F4]">
-
-    <div class="w-11/12 mx-auto ">
+    <div class="hidden md:block relative  ">
+      <img class="absolute  mt-15 p-3  bg-[#F4F4F4] " src="./assets/Vector.png" alt="">
+    </div>
+    <div class="w-11/12 mx-auto py-20 ">
         
-        <div class="hidden md:block ">
-          <img class=" mt-15 p-3  bg-[#F4F4F4] " src="./assets/Vector.png" alt="">
-        </div>
-
-        <div class="  text-center  gap-y-10 lg:text-left lg:ml-[52px]">
-            <button class="mt-5 md:mt-0 w-40  text-base text-[#494949] text-center  p-3  rounded-full
-         bg-white bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black mr-3 "></i>About Us</button>
+               <div class=" gap-y-3  lg:gap-y-10 text-center lg:text-left lg: ">
+            <button class="px-4 py-2  text-base text-[#494949] text-center  font-extrabold  rounded-full
+            bg-white bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black mr-3 "></i>
+            <span class="text-base text-[#494949] text-center  font-extrabold">About Us</span>
+            </button>
         </div>
   
             <div class="">
@@ -145,9 +145,9 @@
                         class="container mx-auto size-44 md:size-11/12 text-center justify-center items-center rounded-lg shadow-2xl" />
                     </div>
                     <div class=" ">
-                        <div class="w-11/12">
-                            <h1 class="text-2xl md:text-4xl font-bold text-center p-5">We design thoughtful, liveable spaces</h1>
-                            <p class=" text-center p-3">
+                        <div class="w-11/12 md:w-full">
+                            <h1 class="text-2xl md:text-4xl font-bold text-center md:text-left">We design thoughtful, liveable spaces</h1>
+                            <p class=" text-left md:text-left">
                                 The barn house captivates with its blend of rustic charm and 
                                 modern sophistication, featuring weathered wood, sleek metal accents.
                             </p>
@@ -181,9 +181,9 @@
 
 <!-- Our Works Process starts -->
 <section class=" bg-[#F4F4F4] py-5">
-  <div class="w-11/12 mx-auto pt-5">
-<div class=" mx-auto w-4/5 text-center items-center my-5">
-    <button class="w-48  text-base font-bold text-[#494949] text-center  p-3 rounded-full
+  <div class="w-11/12 mx-auto">
+<div class=" mx-auto w-4/5 text-center items-center">
+    <button class="w-11/12 md:w-40  text-base font-bold text-[#494949] text-center  p-3 rounded-full
          bg-white bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black mr-2"></i>How we works</button>
     <h1 class="text-center items-center font-bold text-2xl md:text-4xl  text-[#212121] my-3">Our Works Process</h1>
     <p class="text-base text-[#494949] p-2">The barn house captivates with its blend of rustic charm and  modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
@@ -215,18 +215,18 @@
         <img class="md:w-2/12  h-10 mt-3 ml-3 my-2" src="./assets/vision.png" alt="">
         <div class=" my-3">
           <h2 class="card-title text-xl  text-[#1C1C1C] font-bold">Supervision</h2>
-          <p class="my-3 text-base font-bold text-[#494949] px-5">The barn house captivates with its blend of rustic charm and modern.</p>
+          <p class="my-3 text-base font-bold text-[#494949]">The barn house captivates with its blend of rustic charm and modern.</p>
         </div>
     </div>
 
     <!-- card-4 -->
 
 
-    <div class=" rounded-lg  shadow-xl pt-3 pl-5 text-left bg-[#77AAEA] gap-5">
+    <div class=" rounded-lg  shadow-xl pt-3 pl-5 text-left ite bg-[#77AAEA] gap-5">
         <img class="md:w-2/12  h-10 mt-3 ml-3 my-2" src="./assets/vision.png" alt="">
         <div class="">
-          <h2 class="card-title text-xl  text-[#1C1C1C] font-bold">Budget Planning</h2>
-          <p class="my-3 text-base font-bold text-[#494949] px-5">The barn house captivates with its blend of rustic charm and modern.</p>
+          <h2 class="card-title text-xl text-left  text-[#1C1C1C] font-bold">Budget Planning</h2>
+          <p class="my-3 text-base text-left font-bold text-[#494949] ">The barn house captivates with its blend of rustic charm and modern.</p>
         </div>
     </div>
 
@@ -241,7 +241,7 @@
 <div class="w-11/12 mx-auto">
   <!-- Portfolio text starts here -->
     <div class="text-center items-center justify-center my-10">
-      <button class="w-40 md:w-4/12 text-sm font-bold text-[#494949] text-center  p-1 rounded-full
+      <button class="w-11/12 md:w-4/12 text-sm font-bold text-[#494949] text-center  p-1 rounded-full
          bg-green-100 bg-opacity-90 "> <i class="fa-solid fa-arrow-right text-black mr-2"></i>Explore our Latest works
       </button>
       <h1 class="text-2px md:text-4xl text-[#212121] font-extrabold mt-3">Our Latest Portfolio</h1>
@@ -444,25 +444,15 @@
             </div>
 
             <div class="flex text-center items-center md:justify-center ">
-              <button class="flex items-center justify-center text-center w-full mx-6 p-3 md:w-3/12 bg-[#ABEF5F] rounded-full font-bold gap-5">
+              <button class="flex items-center justify-center text-center w-11/12 mx-6 p-3 md:w-3/12 bg-[#ABEF5F] rounded-full font-bold gap-5">
                 <span>Book Consult</span>
                 <i class="fa-solid fa-arrow-right
                   bg-black text-white -rotate-45 px-[8px] py-[7px] rounded-full "></i>
               </button>
-            </div>
-
-           
+            </div>   
 </div>
         
     </section>
-
-   
-
-      
-   
-   
-
-
-   </footer>
+ </footer>
 </body>
 </html>
